@@ -1,6 +1,6 @@
 import socket
 
-host = "127.0.0.1"
+host = "192.168.30.130"
 port = 5006
 
 while True:
@@ -15,4 +15,5 @@ while True:
     s.send(msg.encode())
     data = s.recv(1024).decode()
     print("Servidor:", data)
+
     s.close()
