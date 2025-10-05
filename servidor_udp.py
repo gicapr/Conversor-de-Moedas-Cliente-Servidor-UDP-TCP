@@ -1,7 +1,7 @@
 import socket
 import random
 
-host = "127.0.0.1"
+host = ""
 port = 5005
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -22,5 +22,6 @@ while True:
         resposta = f"{valor} BRL = {convertido} {moeda.upper()} (cotação {cotacao})"
     except:
         resposta = "Erro no formato da mensagem."
+
 
     s.sendto(resposta.encode(), addr)
