@@ -1,7 +1,7 @@
 import socket
 import random
 
-host = "127.0.0.1"
+host = ""
 port = 5006
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -23,4 +23,5 @@ while True:
     except:
         resposta = "Erro no formato da mensagem."
     conn.send(resposta.encode())
+
     conn.close()
