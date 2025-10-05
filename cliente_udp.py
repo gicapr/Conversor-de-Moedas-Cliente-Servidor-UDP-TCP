@@ -1,6 +1,6 @@
 import socket
 
-host = "127.0.0.1"
+host = "192.168.30.130"
 port = 5005
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -13,4 +13,5 @@ while True:
     msg = f"{valor} {moeda}"
     s.sendto(msg.encode(), (host, port))
     data, _ = s.recvfrom(1024)
+
     print("Servidor:", data.decode())
