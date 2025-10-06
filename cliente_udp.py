@@ -1,6 +1,6 @@
 import socket
 
-host = ""
+host = "use o ip da sua máquina"
 port = 5005
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -15,4 +15,5 @@ while True:
     data, _ = s.recvfrom(1024)
 
     print("Servidor:", data.decode())
+
 
