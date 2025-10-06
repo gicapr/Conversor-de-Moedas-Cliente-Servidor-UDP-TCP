@@ -1,6 +1,6 @@
 import socket
 
-host = "192.168.30.130"
+host = "use o ip da sua máquina"
 port = 5006
 
 while True:
@@ -17,3 +17,4 @@ while True:
     print("Servidor:", data)
 
     s.close()
+
